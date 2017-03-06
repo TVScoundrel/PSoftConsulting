@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/TVScoundrel/PSoftConsulting/issues"
   },
-  "homepage": "https://github.com/TVScoundrel/PSoftConsulting#readme"
+  "homepage": "https://github.com/TVScoundrel/PSoftConsulting#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "body-parser": "^1.17.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.1",
+    "mongoose": "^4.8.6"
+  }
 }

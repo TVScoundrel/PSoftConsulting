@@ -1,10 +1,19 @@
 'use strict'
 
-var http = require('http')
+var express = require('express') 
+var config = require('./config') 
+var mongoose = require('mongoose') 
+var setupController = require('./controllers/setupController') 
 
-http.createServer(function (req, res) {
+var app = express()
+var port = process.env.PORT || 3000
 
-  res.writeHead(200, { 'Content-Type': 'text/plain' })
-  res.end('Hello world\n')
+app.use('/assets', express.static(__dirname + '/public/assets'))
 
-}).listen(1337, '127.0.0.1')
+app.set('view engine', 'ejs')
+
+mongoose.connect(config.getDBConnectionString())
+
+setupController(app)
+
+app.listen(port)
