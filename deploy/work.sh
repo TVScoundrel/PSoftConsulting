@@ -25,8 +25,8 @@ else
 fi
 
 # Install dependencies
-npm install --dev
-npm prune --dev
+npm install --only=dev
+npm prune --only=dev
 
 # Restart app
 passenger-config restart-app --ignore-app-not-running --ignore-passenger-not-running $RESTART_ARGS $APP_DIR/code
