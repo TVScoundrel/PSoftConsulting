@@ -9,7 +9,7 @@ var apiController = require('./controllers/apiController')
 var app = express()
 var port = process.env.PORT || 3000
 
-app.use('/assets', express.static(__dirname + '/public/assets'))
+app.use(express.static('public'))
 
 app.set('view engine', 'ejs')
 
