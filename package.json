@@ -16,8 +16,7 @@
     "url": "https://github.com/TVScoundrel/PSoftConsulting/issues"
   },
   "homepage": "https://github.com/TVScoundrel/PSoftConsulting#readme",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "body-parser": "^1.17.0",
     "ejs": "^2.5.6",
     "express": "^4.15.1",
